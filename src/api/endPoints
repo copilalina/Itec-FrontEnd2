@@ -1,0 +1,14 @@
+const BASE_URL = "https://localhost:7211";
+
+export const endPoints = {
+  LoginUser: `${BASE_URL}/login`,
+  RegisterUser: `${BASE_URL}/register`,
+  GetCreatedRoomsByUserId: `${BASE_URL}/api/App/GetCreatedRoomsbyUserId`,
+  GetJoinedRoomsByUserId: `${BASE_URL}/api/App/GetJoinedRoomsByUserId`,
+  CreateRoom: `${BASE_URL}/api/App/CreateRoom`,
+  DeleteRoom: (roomId) => `${BASE_URL}/api/App/DeleteRoom/${roomId}`,
+  JoinRoom: (roomId) => `${BASE_URL}/api/App/JoinRoom/${roomId}`,
+  GetUserDetails: (userId) => `${BASE_URL}/api/App/GetUerDetails/${userId}`,
+  GetCurrentUserId: `${BASE_URL}/api/App/GetCurrentUserId`,
+  GetRoomUsersById: (roomId) => `${BASE_URL}/api/App/getRoomUsersById/${roomId}`,
+};

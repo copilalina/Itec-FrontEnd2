@@ -1,0 +1,102 @@
+/* Elimină spații implicite și setează full screen */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-page {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom, #7c3aed, #3b82f6);
+}
+
+.left-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-text {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+  padding-left: 40px;
+  line-height: 1.2;
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-box h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.login-box label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: #374151;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #f9fafb;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #111827;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.login-box button:hover {
+  background-color: #1f2937;
+}
+
+.switch-text {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #374151;
+}
+
+.switch-text .link {
+  color: #2563eb;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
